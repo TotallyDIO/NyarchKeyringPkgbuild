@@ -21,4 +21,5 @@ sha512sums=('SKIP')
 package() {
   cd "$srcdir/keyring-$pkgver-$pkgrel"
   make PREFIX=/usr "DESTDIR=$pkgdir" install
+  # above shouldnt need change
 }
