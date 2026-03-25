@@ -3,7 +3,7 @@
 # See COPYING for license details.
 # pkgver is YYYYMMDD
 pkgname=nyarch-keyring #done
-pkgver=20250531
+pkgver=1
 pkgrel=1
 pkgdesc='Nyarch GPG keyring'
 arch=('any')
