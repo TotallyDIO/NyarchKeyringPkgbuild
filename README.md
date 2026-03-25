@@ -1,7 +1,7 @@
 # TODO:
 1. change branding - should be just about done
 2. change source() in PKGBUILD - Done
-3. Decide how to do versions - none known now, for testing we go up in incriments of 1. 
+3. Decide how to do versions
 
 # Notes
 1. nyarch-keyring.install shouldnt need to be changed, it just used variables and normal commands
