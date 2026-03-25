@@ -4,4 +4,4 @@
 3. Decide how to do versions
 
 # Notes
-1. chaotic-ring.install shouldnt need to be changed, it just used variables and normal commands
+1. nyarch-keyring.install shouldnt need to be changed, it just used variables and normal commands
