@@ -1,25 +1,21 @@
-# Maintainer: dr460nf1r3 <dr460nf1r3 at chaotic dot cx>
-# Maintainer: Pedro H. Lara Campos <root@pedrohlc.com>
-# Thanks for archlinuxcn's package that I've used as template!
-
-pkgname='chaotic-keyring'
-pkgver='20250614'
-# above is YYYYMMDD?
+# This file is part of Arch Linux CN ( http://www.archlinuxcn.org ).
+# See COPYING for license details.
+# pkgver is YYYYMMDD
+pkgname=nyarch-keyring #done
+pkgver=20250531
 pkgrel=1
-pkgdesc='Chaotic-AUR PGP keyring'
+pkgdesc='Nyarch GPG keyring'
 arch=('any')
-url='https://aur.chaotic.cx'
-# change above
+url='https://https://github.com/TotallyDIO/NyarchKeyringPkgbuild'
 license=('GPL')
 depends=('archlinux-keyring')
+makedepends=('git')
 optdepends=('pkgstats: install to submit package usage statistics')
-install=$pkgname.install
-source=("keyring-$pkgver-$pkgrel.tar.gz::https://github.com/chaotic-aur/keyring/archive/$pkgver-$pkgrel.tar.gz")
-# when keyring is made, change url above to where its hosted
+install="nyarch-keyring.install"
+source=("git+https://github.com/archlinuxcn/archlinuxcn-keyring.git#tag=$pkgver")
 sha512sums=('SKIP')
 
 package() {
-  cd "$srcdir/keyring-$pkgver-$pkgrel"
-  make PREFIX=/usr "DESTDIR=$pkgdir" install
-  # above shouldnt need change
+  cd archlinuxcn-keyring
+  make PREFIX=/usr DESTDIR="$pkgdir" install
 }
