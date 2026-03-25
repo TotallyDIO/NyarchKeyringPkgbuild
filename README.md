@@ -5,4 +5,6 @@
 
 # Notes
 1. nyarch-keyring.install shouldnt need to be changed, it just used variables and normal commands
-2. as far as i understand, the PKGBUILD pulls correctly. However when going into /pkg/nyarch-keyring/..../keyrings/nyarch-trusted, it doesnt exist. No cause known.
+2. change pkgver to decide which release to pull from
+
+SHOULD be done :3
