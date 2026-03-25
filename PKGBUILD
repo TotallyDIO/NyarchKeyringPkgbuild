@@ -1,4 +1,5 @@
-# This file is part of Arch Linux CN ( http://www.archlinuxcn.org ).
+# maintainter: Hunter Tadlock-Barnes
+# used Arch Linux CN ( http://www.archlinuxcn.org ). as format
 # See COPYING for license details.
 # pkgver is YYYYMMDD
 pkgname=nyarch-keyring #done
@@ -12,10 +13,10 @@ depends=('archlinux-keyring')
 makedepends=('git')
 optdepends=('pkgstats: install to submit package usage statistics')
 install="nyarch-keyring.install"
-source=("git+https://github.com/archlinuxcn/archlinuxcn-keyring.git#tag=$pkgver")
+source=("git+https://github.com/TotallyDIO/NyarchKeyring.git#tag=1")
 sha512sums=('SKIP')
 
 package() {
-  cd archlinuxcn-keyring
+  cd NyarchKeyring
   make PREFIX=/usr DESTDIR="$pkgdir" install
 }
