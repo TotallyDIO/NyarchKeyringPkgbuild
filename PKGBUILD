@@ -1,4 +1,4 @@
-# maintainter: TotallyDIO email: TotallyDIO_at_proton.me discord: @totallydio
+# maintainter: TotallyDIO email: TotallyDIO_at_proton.me
 # please only contact me for important things like inquieries or security issues.
 # used Arch Linux CN ( http://www.archlinuxcn.org ). as format
 # See COPYING for license details.
@@ -7,6 +7,7 @@ pkgname=nyarch-keyring #done
 pkgver=2
 pkgrel=1
 pkgdesc='Nyarch GPG keyring'
+packager='TotallyDIO'
 arch=('any')
 url='https://https://github.com/TotallyDIO/NyarchKeyringPkgbuild'
 license=('GPL')
