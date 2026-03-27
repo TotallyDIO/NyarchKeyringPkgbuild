@@ -4,7 +4,7 @@
 # See COPYING for license details.
 # pkgver is YYYYMMDD
 pkgname=nyarch-keyring #done
-pkgver=2
+pkgver=4
 pkgrel=1
 pkgdesc='Nyarch GPG keyring'
 packager='TotallyDIO'
